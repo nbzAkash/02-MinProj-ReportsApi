@@ -1,6 +1,7 @@
 package in.reports.binding;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -12,13 +13,14 @@ import lombok.Data;
 public class CitizenPlan {
 	
 	@Id
+	@GeneratedValue
 	private Integer cid;
 	private String planName;
 	private String planStatus;
 	private String cname;
 	private String cmail;
 	private String gender;
-	private String ssn;
+	private Long ssn;
 	private Long phno;
 
 }
